@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: productcatalogue
+  name: productcatalogue-service
   labels:
     app: productcatalogue
 spec:
@@ -18,7 +18,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: productcatalogue
+  name: productcatalogue-deployment
 spec:
   selector:
     matchLabels:
