@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: shopfront
+  name: shopfront-service
   labels:
     app: shopfront
 spec:
@@ -18,7 +18,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: shopfront
+  name: shopfront-deployment
 spec:
   selector:
     matchLabels:
