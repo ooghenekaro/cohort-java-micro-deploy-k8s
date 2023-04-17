@@ -1,0 +1,7 @@
+/home/rekeyole/docker-Java-kubernetes-project/stockmanager/src/main/java/uk/co/danielbryant/djshopping/stockmanager/StockManagerApplication.java
+/home/rekeyole/docker-Java-kubernetes-project/stockmanager/src/main/java/uk/co/danielbryant/djshopping/stockmanager/config/DataGenerator.java
+/home/rekeyole/docker-Java-kubernetes-project/stockmanager/src/main/java/uk/co/danielbryant/djshopping/stockmanager/exceptions/StockNotFoundException.java
+/home/rekeyole/docker-Java-kubernetes-project/stockmanager/src/main/java/uk/co/danielbryant/djshopping/stockmanager/model/Stock.java
+/home/rekeyole/docker-Java-kubernetes-project/stockmanager/src/main/java/uk/co/danielbryant/djshopping/stockmanager/services/StockService.java
+/home/rekeyole/docker-Java-kubernetes-project/stockmanager/src/main/java/uk/co/danielbryant/djshopping/stockmanager/resources/StockResource.java
+/home/rekeyole/docker-Java-kubernetes-project/stockmanager/src/main/java/uk/co/danielbryant/djshopping/stockmanager/repositories/StockRepository.java
