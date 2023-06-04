@@ -1,5 +1,4 @@
 FROM openjdk:8-jre
-WORKDIR app.jar
 COPY target/productcatalogue-0.0.1-SNAPSHOT.jar app.jar
 COPY . app-config.yml
 EXPOSE 8020
