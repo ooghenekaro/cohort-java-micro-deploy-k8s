@@ -11,8 +11,8 @@ pipeline {
     APP_NAME_THREE = "ooghenekaro/stockmanager"
     IMAGE_TAG = "v1.0.0"
     //PRODUCT = "productcatalogue/Dockerfile"
-    SHOPFRONT = "shopfront/Dockerfile"
-    STOCKMANAGER = "stockmanager/Dockerfile"
+    //SHOPFRONT = "shopfront/Dockerfile"
+    //STOCKMANAGER = "stockmanager/Dockerfile"
     }
     stages { 
         stage('SCM Checkout') {
@@ -23,9 +23,9 @@ pipeline {
 
         stage('Build docker image') {
             steps {  
-               // sh 'docker build -t $APP_NAME_ONE:$IMAGE_TAG -f $PRODUCT .'
-                sh 'docker build -t $APP_NAME_TWO:$IMAGE_TAG -f $SHOPFRONT .'
-                sh 'docker build -t $APP_NAME_THREE:$IMAGE_TAG -f $STOCKMANAGER .'
+               sh 'docker build -t $APP_NAME_ONE:$IMAGE_TAG -f productcatalogue/Dockerfile '
+                sh 'docker build -t $APP_NAME_TWO:$IMAGE_TAG -f shopfront/Dockerfile'
+                sh 'docker build -t $APP_NAME_THREE:$IMAGE_TAG -f stockmanager/Dockerfile'
             }
         }
         stage('login to dockerhub') {
