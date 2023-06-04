@@ -6,11 +6,11 @@ pipeline {
      }
     environment {
     DOCKERHUB_CREDENTIALS = credentials('karo-dockerhub')
-    APP_NAME_ONE = "ooghenekaro/productcatalogue"
+   // APP_NAME_ONE = "ooghenekaro/productcatalogue"
     APP_NAME_TWO = "ooghenekaro/shopfront"
     APP_NAME_THREE = "ooghenekaro/stockmanager"
     IMAGE_TAG = "v1.0.0"
-    PRODUCT = "productcatalogue/Dockerfile"
+    //PRODUCT = "productcatalogue/Dockerfile"
     SHOPFRONT = "shopfront/Dockerfile"
     STOCKMANAGER = "stockmanager/Dockerfile"
     }
@@ -23,7 +23,7 @@ pipeline {
 
         stage('Build docker image') {
             steps {  
-                sh 'docker build -t $APP_NAME_ONE:$IMAGE_TAG -f $PRODUCT .'
+               // sh 'docker build -t $APP_NAME_ONE:$IMAGE_TAG -f $PRODUCT .'
                 sh 'docker build -t $APP_NAME_TWO:$IMAGE_TAG -f $SHOPFRONT .'
                 sh 'docker build -t $APP_NAME_THREE:$IMAGE_TAG -f $STOCKMANAGER .'
             }
@@ -35,7 +35,7 @@ pipeline {
         }
         stage('push image') {
             steps{
-                sh 'docker push $APP_NAME_ONE:$IMAGE_TAG'
+               // sh 'docker push $APP_NAME_ONE:$IMAGE_TAG'
                 sh 'docker push $APP_NAME_TWO:$IMAGE_TAG'
                 sh 'docker push $APP_NAME_THREE:$IMAGE_TAG'
             }
