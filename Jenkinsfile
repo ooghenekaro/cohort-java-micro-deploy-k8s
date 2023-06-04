@@ -24,8 +24,8 @@ pipeline {
         stage('Build docker image') {
             steps {  
                sh 'docker build -t $APP_NAME_ONE -f productcatalogue/Dockerfile .'
-                sh 'docker build -t $APP_NAME_TWO -f shopfront/Dockerfile .'
-                sh 'docker build -t $APP_NAME_THREE -f stockmanager/Dockerfile .'
+                //sh 'docker build -t $APP_NAME_TWO -f shopfront/Dockerfile .'
+                //sh 'docker build -t $APP_NAME_THREE -f stockmanager/Dockerfile .'
             }
         }
         stage('login to dockerhub') {
