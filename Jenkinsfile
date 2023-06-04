@@ -9,7 +9,7 @@ pipeline {
    // APP_NAME_ONE = "ooghenekaro/productcatalogue"
     APP_NAME_TWO = "ooghenekaro/shopfront"
     APP_NAME_THREE = "ooghenekaro/stockmanager"
-    IMAGE_TAG = "v1.0.0"
+    IMAGE_TAG = "latest"
     //PRODUCT = "productcatalogue/Dockerfile"
     //SHOPFRONT = "shopfront/Dockerfile"
     //STOCKMANAGER = "stockmanager/Dockerfile"
