@@ -6,7 +6,7 @@ pipeline {
      }
     environment {
     DOCKERHUB_CREDENTIALS = credentials('karo-dockerhub')
-   // APP_NAME_ONE = "ooghenekaro/productcatalogue"
+    APP_NAME_ONE = "ooghenekaro/productcatalogue"
     APP_NAME_TWO = "ooghenekaro/shopfront"
     APP_NAME_THREE = "ooghenekaro/stockmanager"
     //IMAGE_TAG = "latest"
