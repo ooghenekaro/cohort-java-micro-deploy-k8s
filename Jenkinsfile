@@ -9,7 +9,7 @@ pipeline {
    // APP_NAME_ONE = "ooghenekaro/productcatalogue"
     APP_NAME_TWO = "ooghenekaro/shopfront"
     APP_NAME_THREE = "ooghenekaro/stockmanager"
-    IMAGE_TAG = "latest"
+    //IMAGE_TAG = "latest"
     //PRODUCT = "productcatalogue/Dockerfile"
     //SHOPFRONT = "shopfront/Dockerfile"
     //STOCKMANAGER = "stockmanager/Dockerfile"
@@ -23,9 +23,9 @@ pipeline {
 
         stage('Build docker image') {
             steps {  
-               sh 'docker build -t $APP_NAME_ONE:$IMAGE_TAG -f productcatalogue/Dockerfile .'
-                sh 'docker build -t $APP_NAME_TWO:$IMAGE_TAG -f shopfront/Dockerfile .'
-                sh 'docker build -t $APP_NAME_THREE:$IMAGE_TAG -f stockmanager/Dockerfile .'
+               sh 'docker build -t $APP_NAME_ONE -f productcatalogue/Dockerfile .'
+                sh 'docker build -t $APP_NAME_TWO -f shopfront/Dockerfile .'
+                sh 'docker build -t $APP_NAME_THREE -f stockmanager/Dockerfile .'
             }
         }
         stage('login to dockerhub') {
